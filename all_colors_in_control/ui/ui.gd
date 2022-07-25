@@ -13,7 +13,10 @@ func update_score(score):
 
 func update_ship_count(ship_count):
 	$ShipCount.text = str(ship_count)
-		
+
+
+func update_summon_speed(speed):
+	pass
 
 
 func _on_Player_player_die():

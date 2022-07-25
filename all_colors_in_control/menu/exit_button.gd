@@ -1,4 +1,5 @@
 extends Button
 
 func _pressed():
-	get_tree().quit()
+	if OS.get_name() != "HTML5" :
+		get_tree().quit()

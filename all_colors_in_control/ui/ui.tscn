@@ -60,7 +60,8 @@ margin_left = 111.0
 margin_top = 908.0
 margin_right = 396.0
 margin_bottom = 1013.0
-text = "[0,0,0,0]"
+rect_pivot_offset = Vector2( -52, -1217 )
+text = "[0, 0, 0, 0]"
 
 [node name="GameOver" type="Control" parent="."]
 visible = false

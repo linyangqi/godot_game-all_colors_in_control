@@ -18,5 +18,10 @@ position = Vector2( 960, 540 )
 
 [node name="MusicDJ" parent="." instance=ExtResource( 5 )]
 
+[node name="ScoreTimer" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+
 [connection signal="player_die" from="Player" to="." method="_on_Player_player_die"]
 [connection signal="player_die" from="Player" to="UI" method="_on_Player_player_die"]
+[connection signal="timeout" from="ScoreTimer" to="." method="_on_ScoreTimer_timeout"]

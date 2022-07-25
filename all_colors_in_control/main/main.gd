@@ -11,7 +11,7 @@ func update_ship_count():
 
 func _on_ship_enemy_die(ship_type):
 	if $Player:
-		score += 1
+		score += 10
 		$UI.update_score(score)
 	
 	ship_counts[ship_type] -=1
@@ -21,3 +21,11 @@ func _on_ship_enemy_die(ship_type):
 func _on_Player_player_die():
 	$SummonerArrange.queue_free()
 
+
+
+func _on_ScoreTimer_timeout():
+	if $Player:
+		score += 1
+		for count in ship_counts:
+			score += count
+			$UI.update_score(score)

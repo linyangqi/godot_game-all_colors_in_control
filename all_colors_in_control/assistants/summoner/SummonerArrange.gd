@@ -16,5 +16,10 @@ func _on_SummonTimer_timeout():
 
 
 func _on_SpeedUp_timeout():
-	if timer.wait_time > 0.1:
+	if timer.wait_time > 0.05:
 		timer.wait_time *= 0.9
+
+
+func _on_Accelerate_button_down():
+	if timer.wait_time > 0.2:
+		timer.wait_time *= 0.7

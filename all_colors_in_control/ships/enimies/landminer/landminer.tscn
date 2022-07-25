@@ -2,7 +2,7 @@
 
 [ext_resource path="res://ships/enimies/enemy_ship.tscn" type="PackedScene" id=1]
 [ext_resource path="res://ships/enimies/landminer/landminer.gd" type="Script" id=2]
-[ext_resource path="res://ships/enimies/shooter/bullet/bullet.png" type="Texture" id=3]
+[ext_resource path="res://ships/enimies/landminer/landmine/landmine.png" type="Texture" id=3]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -57,7 +57,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0, 2 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( 1e-05, 1e-05 ), Vector2( 1, 0.5 ) ]
+"values": [ Vector2( 1e-05, 1e-05 ), Vector2( 0.5, 0.3 ) ]
 }
 
 [node name="Landminer" instance=ExtResource( 1 )]
