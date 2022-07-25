@@ -93,9 +93,12 @@ margin_bottom = -15.0
 custom_fonts/font = ExtResource( 4 )
 text = "All Colors in Control"
 
-[node name="Author" type="Label" parent="."]
+[node name="Author" type="LinkButton" parent="."]
 anchor_top = 1.0
 anchor_bottom = 1.0
 margin_top = -105.0
 margin_right = 1047.0
 text = "made by linyangqi (@robot_wbw )"
+underline = 2
+script = ExtResource( 2 )
+scene_path = "res://menu/links/my_links.tscn"

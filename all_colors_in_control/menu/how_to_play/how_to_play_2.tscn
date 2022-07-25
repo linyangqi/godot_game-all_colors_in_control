@@ -66,13 +66,6 @@ text = "Control:
 left: A, ←, touch left part of screen
 right: D, →, touch right part of screen"
 
-[node name="Engine" type="Label" parent="."]
-anchor_top = 1.0
-anchor_bottom = 1.0
-margin_top = -105.0
-margin_right = 1047.0
-text = "made with Godot >w<"
-
 [node name="Next" type="Button" parent="."]
 anchor_left = 0.5
 anchor_top = 1.0

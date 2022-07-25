@@ -1,4 +1,4 @@
-extends Button
+extends BaseButton
 
 export var scene_path:String = ""
 
