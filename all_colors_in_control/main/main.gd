@@ -1,6 +1,7 @@
 extends Node
 
 var score := 0
+var kills := 0
 var ship_counts = [0,0,0,0]
 
 
@@ -12,7 +13,9 @@ func update_ship_count():
 func _on_ship_enemy_die(ship_type):
 	if $Player:
 		score += 10
+		kills += 1
 		$UI.update_score(score)
+		$UI.update_kills(kills)
 	
 	ship_counts[ship_type] -=1
 	update_ship_count()

@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://ui/theme/ui_theme.tres" type="Theme" id=1]
 [ext_resource path="res://ui/Controlling.gd" type="Script" id=2]
 [ext_resource path="res://ui/ui.gd" type="Script" id=3]
 [ext_resource path="res://ui/theme/fonts/font1.tres" type="DynamicFont" id=4]
 [ext_resource path="res://menu/change_scene_button.gd" type="Script" id=5]
+[ext_resource path="res://ui/theme/fonts/font2.tres" type="DynamicFont" id=6]
 
 [sub_resource type="InputEventAction" id=1]
 action = "enter"
@@ -55,6 +56,14 @@ margin_bottom = 175.0
 custom_fonts/font = ExtResource( 4 )
 text = "Score: 0"
 
+[node name="Kills" type="Label" parent="."]
+margin_left = 58.0
+margin_top = 137.0
+margin_right = 265.0
+margin_bottom = 242.0
+custom_fonts/font = ExtResource( 6 )
+text = "Kills: 0"
+
 [node name="ShipCount" type="Label" parent="."]
 margin_left = 111.0
 margin_top = 908.0
@@ -64,33 +73,43 @@ rect_pivot_offset = Vector2( -52, -1217 )
 text = "[0, 0, 0, 0]"
 
 [node name="GameOver" type="Control" parent="."]
-visible = false
 margin_left = 665.0
 margin_top = 426.0
 margin_right = 1322.0
 margin_bottom = 733.0
 
 [node name="Text" type="Label" parent="GameOver"]
-margin_top = -186.0
+margin_top = -251.0
 margin_right = 637.0
-margin_bottom = -11.0
+margin_bottom = -76.0
 custom_fonts/font = ExtResource( 4 )
 text = "Game Over !"
 
 [node name="Score" type="Label" parent="GameOver"]
 margin_left = 68.0
-margin_top = -25.0
+margin_top = -90.0
 margin_right = 485.0
-margin_bottom = 188.0
+margin_bottom = 123.0
 text = "Final Score: 
 0"
 align = 1
 
+[node name="Kills" type="Label" parent="GameOver"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -184.5
+margin_top = -39.5
+margin_right = 22.5
+margin_bottom = 65.5
+custom_fonts/font = ExtResource( 6 )
+text = "(Kills: 0)"
+
 [node name="Retry" type="Button" parent="GameOver"]
-margin_left = 26.0
-margin_top = 155.0
-margin_right = 206.0
-margin_bottom = 266.0
+margin_top = 206.0
+margin_right = 180.0
+margin_bottom = 317.0
 shortcut_in_tooltip = false
 shortcut = SubResource( 2 )
 text = "Retry"
@@ -99,10 +118,10 @@ script = ExtResource( 5 )
 scene_path = "res://main/main.tscn"
 
 [node name="Quit" type="Button" parent="GameOver"]
-margin_left = 343.0
-margin_top = 155.0
-margin_right = 523.0
-margin_bottom = 266.0
+margin_left = 385.0
+margin_top = 206.0
+margin_right = 565.0
+margin_bottom = 317.0
 shortcut_in_tooltip = false
 shortcut = SubResource( 4 )
 text = "Quit"

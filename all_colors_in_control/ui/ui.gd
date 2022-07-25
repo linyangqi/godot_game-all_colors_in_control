@@ -10,6 +10,10 @@ func update_score(score):
 	$Score.text = "Score: "+ str(score)
 	$GameOver/Score.text =  "Final Score: \n" + str(score)
 
+func update_kills(kills):
+	$Kills.text = "Kills: "+ str(kills)
+	$GameOver/Kills.text =  "(Kills: " + str(kills) + ")"
+
 
 func update_ship_count(ship_count):
 	$ShipCount.text = str(ship_count)
