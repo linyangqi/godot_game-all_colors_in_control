@@ -63,8 +63,8 @@ margin_top = 296.0
 margin_right = 1537.0
 margin_bottom = 617.0
 text = "Control: 
-left: A, ←, touch left part of screen
-right: D, →, touch right part of screen"
+left: A / ← / touch left part of screen
+right: D / → / touch right part of screen"
 
 [node name="Next" type="Button" parent="."]
 anchor_left = 0.5

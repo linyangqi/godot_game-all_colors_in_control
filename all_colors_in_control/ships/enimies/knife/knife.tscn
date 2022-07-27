@@ -5,8 +5,8 @@
 
 [node name="Knife" instance=ExtResource( 1 )]
 modulate = Color( 0.827451, 0, 1, 1 )
-speed = 15.0
-rotate_speed = 0.03
+speed = 10.0
+rotate_speed = 0.02
 ship_type = 1
 
 [node name="CollisionPolygon2D" parent="." index="0"]
