@@ -1,0 +1,2 @@
+这只是个单机游戏……并不收集任何信息。
+The game doesn't need internet, and it don't collect any information on your device.
