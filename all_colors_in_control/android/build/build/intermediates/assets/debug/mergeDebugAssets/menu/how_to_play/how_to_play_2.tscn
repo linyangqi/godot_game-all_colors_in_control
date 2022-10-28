@@ -1,0 +1,99 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://menu/background.png" type="Texture" id=1]
+[ext_resource path="res://ui/theme/fonts/font1.tres" type="DynamicFont" id=2]
+[ext_resource path="res://menu/change_scene_button.gd" type="Script" id=3]
+[ext_resource path="res://ui/theme/ui_theme.tres" type="Theme" id=4]
+
+[sub_resource type="InputEventAction" id=7]
+action = "quit"
+
+[sub_resource type="ShortCut" id=4]
+shortcut = SubResource( 7 )
+
+[sub_resource type="InputEventAction" id=5]
+action = "quit"
+
+[sub_resource type="ShortCut" id=6]
+shortcut = SubResource( 5 )
+
+[node name="Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color( 1, 1, 1, 0.0784314 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 1 )
+expand = true
+
+[node name="Title" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -554.5
+margin_right = 554.5
+margin_bottom = 175.0
+custom_fonts/font = ExtResource( 2 )
+text = "How to Play: Controls"
+
+[node name="Back" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -87.0
+margin_top = -197.0
+margin_right = 93.0
+margin_bottom = -86.0
+shortcut_in_tooltip = false
+shortcut = SubResource( 4 )
+text = "Back"
+flat = true
+script = ExtResource( 3 )
+scene_path = "res://menu/menu.tscn"
+
+[node name="Text" type="Label" parent="."]
+margin_left = 371.0
+margin_top = 296.0
+margin_right = 1537.0
+margin_bottom = 617.0
+text = "Control: 
+left: A / ← / touch left part of screen
+right: D / → / touch right part of screen"
+
+[node name="Next" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = 361.0
+margin_top = -283.0
+margin_right = 541.0
+margin_bottom = -172.0
+shortcut_in_tooltip = false
+shortcut = SubResource( 4 )
+text = "Next"
+flat = true
+script = ExtResource( 3 )
+scene_path = "res://menu/how_to_play/how_to_play_3.tscn"
+
+[node name="Previous" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = 305.0
+margin_top = -389.0
+margin_right = 565.0
+margin_bottom = -278.0
+shortcut_in_tooltip = false
+shortcut = SubResource( 6 )
+text = "Previous"
+flat = true
+script = ExtResource( 3 )
+scene_path = "res://menu/how_to_play/how_to_play.tscn"

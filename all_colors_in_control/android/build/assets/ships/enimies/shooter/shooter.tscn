@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://ships/enimies/enemy_ship.tscn" type="PackedScene" id=1]
+[ext_resource path="res://ships/enimies/shooter/shooter.gd" type="Script" id=2]
+
+[node name="Shooter" instance=ExtResource( 1 )]
+modulate = Color( 0.4, 0.8, 1, 1 )
+script = ExtResource( 2 )
+
+[node name="CollisionPolygon2D" parent="." index="0"]
+polygon = PoolVector2Array( -5, -73, -64, -28, -62, 82, -3, 42, 54, 81, 52, -25 )
+
+[node name="ShootCooldown" type="Timer" parent="." index="2"]
+wait_time = 1.5
+autostart = true
+
+[connection signal="timeout" from="ShootCooldown" to="." method="_on_ShootCooldown_timeout"]

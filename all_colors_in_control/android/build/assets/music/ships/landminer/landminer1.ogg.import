@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/landminer1.ogg-fe1f7772ffff10ebf202cfc1b83022ab.oggstr"
+
+[deps]
+
+source_file="res://music/ships/landminer/landminer1.ogg"
+dest_files=[ "res://.import/landminer1.ogg-fe1f7772ffff10ebf202cfc1b83022ab.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,62 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://music/ships/--adjusted/shooter2.ogg" type="AudioStream" id=1]
+[ext_resource path="res://music/ships/shooter/shooter1.ogg" type="AudioStream" id=2]
+[ext_resource path="res://music/ships/landminer/landminer1.ogg" type="AudioStream" id=3]
+[ext_resource path="res://music/ships/landminer/landminer2.ogg" type="AudioStream" id=4]
+[ext_resource path="res://music/ships/laser/laser2.ogg" type="AudioStream" id=5]
+[ext_resource path="res://music/ships/knife/knife1.ogg" type="AudioStream" id=6]
+[ext_resource path="res://music/ships/--adjusted/knife2.ogg" type="AudioStream" id=7]
+[ext_resource path="res://music/ships/laser/laser1.ogg" type="AudioStream" id=8]
+[ext_resource path="res://music/music_dj.gd" type="Script" id=9]
+
+[node name="MusicDJ" type="Node"]
+script = ExtResource( 9 )
+
+[node name="Shooter" type="Node" parent="."]
+
+[node name="1" type="AudioStreamPlayer" parent="Shooter"]
+stream = ExtResource( 2 )
+volume_db = -80.0
+autoplay = true
+
+[node name="2" type="AudioStreamPlayer" parent="Shooter"]
+stream = ExtResource( 1 )
+volume_db = -80.0
+autoplay = true
+
+[node name="Knife" type="Node" parent="."]
+
+[node name="1" type="AudioStreamPlayer" parent="Knife"]
+stream = ExtResource( 6 )
+volume_db = -80.0
+autoplay = true
+
+[node name="2" type="AudioStreamPlayer" parent="Knife"]
+stream = ExtResource( 7 )
+volume_db = -80.0
+autoplay = true
+
+[node name="Laser" type="Node" parent="."]
+
+[node name="1" type="AudioStreamPlayer" parent="Laser"]
+stream = ExtResource( 8 )
+volume_db = -80.0
+autoplay = true
+
+[node name="2" type="AudioStreamPlayer" parent="Laser"]
+stream = ExtResource( 5 )
+volume_db = -80.0
+autoplay = true
+
+[node name="Landminer" type="Node" parent="."]
+
+[node name="1" type="AudioStreamPlayer" parent="Landminer"]
+stream = ExtResource( 3 )
+volume_db = -80.0
+autoplay = true
+
+[node name="2" type="AudioStreamPlayer" parent="Landminer"]
+stream = ExtResource( 4 )
+volume_db = -80.0
+autoplay = true
