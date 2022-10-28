@@ -1,0 +1,43 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.godot.game-mergeDebugResources-9:/values-pt/values-pt.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\61011\\.gradle\\caches\\transforms-3\\b7dd4fc7ad6b2aa1a83ff68174a2a927\\transformed\\core-1.2.0\\res\\values-pt\\values-pt.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "135",
+                        "endColumns": "100",
+                        "endOffsets": "231"
+                    }
+                },
+                {
+                    "source": "H:\\android_files\\godot_games\\godot_game-all_colors_in_control_ad\\all_colors_in_control\\android\\build\\res\\values-pt\\godot_project_name_string.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "1",
+                        "startOffsets": "112",
+                        "endColumns": "76",
+                        "endOffsets": "187"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "79",
+                        "endOffsets": "130"
+                    }
+                }
+            ]
+        }
+    ]
+}

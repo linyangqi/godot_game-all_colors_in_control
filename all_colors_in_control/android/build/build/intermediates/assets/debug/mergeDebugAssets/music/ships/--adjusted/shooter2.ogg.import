@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/shooter2.ogg-66773c8485fec27ad04eb9125b40a68f.oggstr"
+
+[deps]
+
+source_file="res://music/ships/--adjusted/shooter2.ogg"
+dest_files=[ "res://.import/shooter2.ogg-66773c8485fec27ad04eb9125b40a68f.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

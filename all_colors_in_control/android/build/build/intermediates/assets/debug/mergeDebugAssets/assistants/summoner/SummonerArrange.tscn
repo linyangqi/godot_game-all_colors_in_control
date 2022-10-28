@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assistants/summoner/SummonerArrange.gd" type="Script" id=1]
+[ext_resource path="res://ui/theme/fonts/font2.tres" type="DynamicFont" id=2]
+
+[node name="SummonerArrange" type="Node"]
+script = ExtResource( 1 )
+
+[node name="SummonTimer" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true
+
+[node name="SpeedUp" type="Timer" parent="."]
+wait_time = 5.0
+autostart = true
+
+[node name="Accelerate" type="Button" parent="."]
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -677.0
+margin_top = -4.0
+margin_right = -355.0
+margin_bottom = 107.0
+custom_fonts/font = ExtResource( 2 )
+text = "Accelerate"
+flat = true
+
+[connection signal="timeout" from="SummonTimer" to="." method="_on_SummonTimer_timeout"]
+[connection signal="timeout" from="SpeedUp" to="." method="_on_SpeedUp_timeout"]
+[connection signal="button_down" from="Accelerate" to="." method="_on_Accelerate_button_down"]

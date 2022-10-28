@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/knife1.ogg-f92f34e405ecd86df5cf9b88368268f5.oggstr"
+
+[deps]
+
+source_file="res://music/ships/knife/knife1.ogg"
+dest_files=[ "res://.import/knife1.ogg-f92f34e405ecd86df5cf9b88368268f5.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
