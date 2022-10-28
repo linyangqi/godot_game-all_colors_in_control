@@ -1,0 +1,97 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://menu/background.png" type="Texture" id=1]
+[ext_resource path="res://ui/theme/fonts/font1.tres" type="DynamicFont" id=2]
+[ext_resource path="res://menu/change_scene_button.gd" type="Script" id=3]
+[ext_resource path="res://ui/theme/ui_theme.tres" type="Theme" id=4]
+[ext_resource path="res://menu/link_button.gd" type="Script" id=5]
+
+[sub_resource type="InputEventAction" id=5]
+action = "quit"
+
+[sub_resource type="ShortCut" id=4]
+shortcut = SubResource( 5 )
+
+[sub_resource type="InputEventAction" id=3]
+action = "quit"
+
+[sub_resource type="ShortCut" id=6]
+shortcut = SubResource( 3 )
+
+[node name="Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+modulate = Color( 1, 1, 1, 0.0784314 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 1 )
+expand = true
+
+[node name="Title" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -522.5
+margin_right = 522.5
+margin_bottom = 175.0
+custom_fonts/font = ExtResource( 2 )
+text = "How to Play: Overall"
+
+[node name="Back" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -87.0
+margin_top = -197.0
+margin_right = 93.0
+margin_bottom = -86.0
+shortcut_in_tooltip = false
+shortcut = SubResource( 4 )
+text = "Back"
+flat = true
+script = ExtResource( 3 )
+scene_path = "res://menu/menu.tscn"
+
+[node name="Text" type="Label" parent="."]
+margin_left = 233.0
+margin_top = 171.0
+margin_right = 1770.0
+margin_bottom = 816.0
+text = "You are the Yellow ship, which has no weapon.
+But you can control all the ship on the screen.
+Make other ship destroy each other to get score!
+And try to survive!
+(There's some music variation when a type of ship reaches number 3)"
+autowrap = true
+
+[node name="Next" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = 361.0
+margin_top = -283.0
+margin_right = 541.0
+margin_bottom = -172.0
+shortcut_in_tooltip = false
+shortcut = SubResource( 6 )
+text = "Next"
+flat = true
+script = ExtResource( 3 )
+scene_path = "res://menu/how_to_play/how_to_play_2.tscn"
+
+[node name="Engine" type="LinkButton" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -105.0
+margin_right = 674.0
+text = "made with Godot >w<"
+underline = 2
+script = ExtResource( 5 )
+link = "https://godotengine.org/"
