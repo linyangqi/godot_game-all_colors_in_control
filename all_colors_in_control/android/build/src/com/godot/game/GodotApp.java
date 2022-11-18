@@ -34,6 +34,11 @@ import org.godotengine.godot.FullScreenGodotApp;
 
 import android.os.Bundle;
 
+import com.openmediation.sdk.InitCallback;
+import com.openmediation.sdk.InitConfiguration;
+import com.openmediation.sdk.OmAds;
+import com.openmediation.sdk.utils.error.Error;
+
 /**
  * Template activity for Godot Android custom builds.
  * Feel free to extend and modify this class for your custom logic.
@@ -43,5 +48,32 @@ public class GodotApp extends FullScreenGodotApp {
 	public void onCreate(Bundle savedInstanceState) {
 		setTheme(R.style.GodotAppMainTheme);
 		super.onCreate(savedInstanceState);
+
+		InitConfiguration configuration = new InitConfiguration.Builder()
+				.appKey("BdPpAp3ooXL8wSUldSnYjUIIM2PrwWRa")
+				.logEnable(false)
+				.build();
+		OmAds.init(configuration, new InitCallback() {
+
+			// Invoked when the initialization is successful.
+			@Override
+			public void onSuccess() {
+			}
+
+			// Invoked when the initialization is failed.
+			@Override
+			public void onError(Error error) {
+			}
+		});
+	}
+	@Override
+	protected void onResume() {
+		super.onResume();
+		OmAds.onResume(this);
+	}
+	@Override
+	protected void onPause() {
+		super.onPause();
+		OmAds.onPause(this);
 	}
 }

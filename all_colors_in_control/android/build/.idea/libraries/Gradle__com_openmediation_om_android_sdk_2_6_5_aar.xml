@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.openmediation:om-android-sdk:2.6.5@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/fc0f8bf12d8eee26f6ec39e2b2ab176b/transformed/jetified-om-android-sdk-2.6.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fc0f8bf12d8eee26f6ec39e2b2ab176b/transformed/jetified-om-android-sdk-2.6.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fc0f8bf12d8eee26f6ec39e2b2ab176b/transformed/jetified-om-android-sdk-2.6.5/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

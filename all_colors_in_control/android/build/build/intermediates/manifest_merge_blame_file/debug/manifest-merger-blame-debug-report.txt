@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="org.godotengine.allcolorsincontrol"
+3    package="com.godot.game"
 4    android:installLocation="auto"
 5    android:versionCode="1"
 6    android:versionName="1.0" >
@@ -27,87 +27,117 @@
 20        android:required="true" />
 20-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:21:9-32
 21
-22    <application
-22-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:30:5-94:19
-23        android:allowBackup="false"
-23-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:30:68-95
-24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-24-->[androidx.core:core:1.2.0] C:\Users\61011\.gradle\caches\transforms-3\b7dd4fc7ad6b2aa1a83ff68174a2a927\transformed\core-1.2.0\AndroidManifest.xml:24:18-86
-25        android:debuggable="true"
-26        android:hasFragileUserData="false"
-26-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:30:118-152
-27        android:icon="@mipmap/icon"
-27-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:30:238-265
-28        android:isGame="true"
-28-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:30:96-117
-29        android:label="@string/godot_project_name_string"
-29-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:30:18-67
-30        android:requestLegacyExternalStorage="false" >
-30-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:30:153-197
-31        <activity
-31-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:65:9-88:20
-32            android:name="com.godot.game.GodotApp"
-32-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:66:13-37
-33            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|density|keyboard|navigation|screenLayout|uiMode"
-33-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:73:13-141
-34            android:excludeFromRecents="false"
-34-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:70:13-47
-35            android:exported="true"
-35-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:71:13-36
-36            android:label="@string/godot_project_name_string"
-36-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:67:13-62
-37            android:launchMode="singleTask"
-37-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:69:13-44
-38            android:resizeableActivity="true"
-38-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:74:13-47
-39            android:screenOrientation="landscape"
-39-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:72:13-50
-40            android:theme="@style/GodotAppSplashTheme" >
-40-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:68:13-55
-41            <intent-filter>
-41-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:80:13-87:29
-42                <action android:name="android.intent.action.MAIN" />
-42-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:81:17-69
-42-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:81:25-66
-43
-44                <category android:name="android.intent.category.LAUNCHER" />
-44-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:82:17-77
-44-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:82:27-74
-45
-46                <!--
-47                Enable access to OpenXR on Oculus mobile devices, no-op on other Android
-48                platforms.
-49                -->
-50                <category android:name="com.oculus.intent.category.VR" />
-50-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:86:17-74
-50-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:86:27-71
-51            </intent-filter>
-52        </activity>
-53        <!-- Records the version of the Godot editor used for building -->
-54        <meta-data
-55            android:name="org.godotengine.editor.version"
-56            android:value="3.5.1.stable" /> <!-- Records the version of the Godot library -->
-57        <meta-data
-57-->[godot-lib.debug.aar] C:\Users\61011\.gradle\caches\transforms-3\1a141d6b1bdd39899011148313653573\transformed\jetified-godot-lib.debug\AndroidManifest.xml:13:9-15:44
-58            android:name="org.godotengine.library.version"
-58-->[godot-lib.debug.aar] C:\Users\61011\.gradle\caches\transforms-3\1a141d6b1bdd39899011148313653573\transformed\jetified-godot-lib.debug\AndroidManifest.xml:14:13-59
-59            android:value="3.5.1.stable" />
-59-->[godot-lib.debug.aar] C:\Users\61011\.gradle\caches\transforms-3\1a141d6b1bdd39899011148313653573\transformed\jetified-godot-lib.debug\AndroidManifest.xml:15:13-41
-60
-61        <service android:name="org.godotengine.godot.GodotDownloaderService" />
-61-->[godot-lib.debug.aar] C:\Users\61011\.gradle\caches\transforms-3\1a141d6b1bdd39899011148313653573\transformed\jetified-godot-lib.debug\AndroidManifest.xml:17:9-80
-61-->[godot-lib.debug.aar] C:\Users\61011\.gradle\caches\transforms-3\1a141d6b1bdd39899011148313653573\transformed\jetified-godot-lib.debug\AndroidManifest.xml:17:18-77
-62
-63        <activity
-63-->[godot-lib.debug.aar] C:\Users\61011\.gradle\caches\transforms-3\1a141d6b1bdd39899011148313653573\transformed\jetified-godot-lib.debug\AndroidManifest.xml:19:9-23:75
-64            android:name="org.godotengine.godot.utils.ProcessPhoenix"
-64-->[godot-lib.debug.aar] C:\Users\61011\.gradle\caches\transforms-3\1a141d6b1bdd39899011148313653573\transformed\jetified-godot-lib.debug\AndroidManifest.xml:20:13-70
-65            android:exported="false"
-65-->[godot-lib.debug.aar] C:\Users\61011\.gradle\caches\transforms-3\1a141d6b1bdd39899011148313653573\transformed\jetified-godot-lib.debug\AndroidManifest.xml:21:13-37
-66            android:process=":phoenix"
-66-->[godot-lib.debug.aar] C:\Users\61011\.gradle\caches\transforms-3\1a141d6b1bdd39899011148313653573\transformed\jetified-godot-lib.debug\AndroidManifest.xml:22:13-39
-67            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-67-->[godot-lib.debug.aar] C:\Users\61011\.gradle\caches\transforms-3\1a141d6b1bdd39899011148313653573\transformed\jetified-godot-lib.debug\AndroidManifest.xml:23:13-72
-68    </application>
-69
-70</manifest>
+22    <uses-permission android:name="android.permission.INTERNET" />
+22-->[com.openmediation:om-android-sdk:2.6.5] C:\Users\61011\.gradle\caches\transforms-3\fc0f8bf12d8eee26f6ec39e2b2ab176b\transformed\jetified-om-android-sdk-2.6.5\AndroidManifest.xml:9:5-67
+22-->[com.openmediation:om-android-sdk:2.6.5] C:\Users\61011\.gradle\caches\transforms-3\fc0f8bf12d8eee26f6ec39e2b2ab176b\transformed\jetified-om-android-sdk-2.6.5\AndroidManifest.xml:9:22-64
+23    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+23-->[com.openmediation:om-android-sdk:2.6.5] C:\Users\61011\.gradle\caches\transforms-3\fc0f8bf12d8eee26f6ec39e2b2ab176b\transformed\jetified-om-android-sdk-2.6.5\AndroidManifest.xml:10:5-79
+23-->[com.openmediation:om-android-sdk:2.6.5] C:\Users\61011\.gradle\caches\transforms-3\fc0f8bf12d8eee26f6ec39e2b2ab176b\transformed\jetified-om-android-sdk-2.6.5\AndroidManifest.xml:10:22-76
+24
+25    <application
+25-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:30:5-94:19
+26        android:allowBackup="false"
+26-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:30:68-95
+27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+27-->[androidx.core:core:1.2.0] C:\Users\61011\.gradle\caches\transforms-3\b7dd4fc7ad6b2aa1a83ff68174a2a927\transformed\core-1.2.0\AndroidManifest.xml:24:18-86
+28        android:debuggable="true"
+29        android:hasFragileUserData="false"
+29-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:30:118-152
+30        android:icon="@mipmap/icon"
+30-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:30:238-265
+31        android:isGame="true"
+31-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:30:96-117
+32        android:label="@string/godot_project_name_string"
+32-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:30:18-67
+33        android:requestLegacyExternalStorage="false"
+33-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:30:153-197
+34        android:testOnly="true" >
+35        <activity
+35-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:65:9-88:20
+36            android:name="com.godot.game.GodotApp"
+36-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:66:13-37
+37            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|density|keyboard|navigation|screenLayout|uiMode"
+37-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:73:13-141
+38            android:excludeFromRecents="false"
+38-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:70:13-47
+39            android:exported="true"
+39-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:71:13-36
+40            android:label="@string/godot_project_name_string"
+40-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:67:13-62
+41            android:launchMode="singleTask"
+41-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:69:13-44
+42            android:resizeableActivity="true"
+42-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:74:13-47
+43            android:screenOrientation="landscape"
+43-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:72:13-50
+44            android:theme="@style/GodotAppSplashTheme" >
+44-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:68:13-55
+45            <intent-filter>
+45-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:80:13-87:29
+46                <action android:name="android.intent.action.MAIN" />
+46-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:81:17-69
+46-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:81:25-66
+47
+48                <category android:name="android.intent.category.LAUNCHER" />
+48-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:82:17-77
+48-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:82:27-74
+49
+50                <!--
+51                Enable access to OpenXR on Oculus mobile devices, no-op on other Android
+52                platforms.
+53                -->
+54                <category android:name="com.oculus.intent.category.VR" />
+54-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:86:17-74
+54-->H:\android_files\godot_games\godot_game-all_colors_in_control_ad\all_colors_in_control\android\build\AndroidManifest.xml:86:27-71
+55            </intent-filter>
+56        </activity>
+57        <!-- Records the version of the Godot editor used for building -->
+58        <meta-data
+59            android:name="org.godotengine.editor.version"
+60            android:value="custom_build" /> <!-- Records the version of the Godot library -->
+61        <meta-data
+61-->[godot-lib.debug.aar] C:\Users\61011\.gradle\caches\transforms-3\1a141d6b1bdd39899011148313653573\transformed\jetified-godot-lib.debug\AndroidManifest.xml:13:9-15:44
+62            android:name="org.godotengine.library.version"
+62-->[godot-lib.debug.aar] C:\Users\61011\.gradle\caches\transforms-3\1a141d6b1bdd39899011148313653573\transformed\jetified-godot-lib.debug\AndroidManifest.xml:14:13-59
+63            android:value="3.5.1.stable" />
+63-->[godot-lib.debug.aar] C:\Users\61011\.gradle\caches\transforms-3\1a141d6b1bdd39899011148313653573\transformed\jetified-godot-lib.debug\AndroidManifest.xml:15:13-41
+64
+65        <service android:name="org.godotengine.godot.GodotDownloaderService" />
+65-->[godot-lib.debug.aar] C:\Users\61011\.gradle\caches\transforms-3\1a141d6b1bdd39899011148313653573\transformed\jetified-godot-lib.debug\AndroidManifest.xml:17:9-80
+65-->[godot-lib.debug.aar] C:\Users\61011\.gradle\caches\transforms-3\1a141d6b1bdd39899011148313653573\transformed\jetified-godot-lib.debug\AndroidManifest.xml:17:18-77
+66
+67        <activity
+67-->[godot-lib.debug.aar] C:\Users\61011\.gradle\caches\transforms-3\1a141d6b1bdd39899011148313653573\transformed\jetified-godot-lib.debug\AndroidManifest.xml:19:9-23:75
+68            android:name="org.godotengine.godot.utils.ProcessPhoenix"
+68-->[godot-lib.debug.aar] C:\Users\61011\.gradle\caches\transforms-3\1a141d6b1bdd39899011148313653573\transformed\jetified-godot-lib.debug\AndroidManifest.xml:20:13-70
+69            android:exported="false"
+69-->[godot-lib.debug.aar] C:\Users\61011\.gradle\caches\transforms-3\1a141d6b1bdd39899011148313653573\transformed\jetified-godot-lib.debug\AndroidManifest.xml:21:13-37
+70            android:process=":phoenix"
+70-->[godot-lib.debug.aar] C:\Users\61011\.gradle\caches\transforms-3\1a141d6b1bdd39899011148313653573\transformed\jetified-godot-lib.debug\AndroidManifest.xml:22:13-39
+71            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+71-->[godot-lib.debug.aar] C:\Users\61011\.gradle\caches\transforms-3\1a141d6b1bdd39899011148313653573\transformed\jetified-godot-lib.debug\AndroidManifest.xml:23:13-72
+72        <activity
+72-->[com.openmediation:om-android-sdk:2.6.5] C:\Users\61011\.gradle\caches\transforms-3\fc0f8bf12d8eee26f6ec39e2b2ab176b\transformed\jetified-om-android-sdk-2.6.5\AndroidManifest.xml:13:9-18:80
+73            android:name="com.crosspromotion.sdk.AdsActivity"
+73-->[com.openmediation:om-android-sdk:2.6.5] C:\Users\61011\.gradle\caches\transforms-3\fc0f8bf12d8eee26f6ec39e2b2ab176b\transformed\jetified-om-android-sdk-2.6.5\AndroidManifest.xml:14:13-62
+74            android:configChanges="keyboardHidden|screenSize|orientation"
+74-->[com.openmediation:om-android-sdk:2.6.5] C:\Users\61011\.gradle\caches\transforms-3\fc0f8bf12d8eee26f6ec39e2b2ab176b\transformed\jetified-om-android-sdk-2.6.5\AndroidManifest.xml:15:13-74
+75            android:launchMode="singleTask"
+75-->[com.openmediation:om-android-sdk:2.6.5] C:\Users\61011\.gradle\caches\transforms-3\fc0f8bf12d8eee26f6ec39e2b2ab176b\transformed\jetified-om-android-sdk-2.6.5\AndroidManifest.xml:16:13-44
+76            android:screenOrientation="user"
+76-->[com.openmediation:om-android-sdk:2.6.5] C:\Users\61011\.gradle\caches\transforms-3\fc0f8bf12d8eee26f6ec39e2b2ab176b\transformed\jetified-om-android-sdk-2.6.5\AndroidManifest.xml:17:13-45
+77            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+77-->[com.openmediation:om-android-sdk:2.6.5] C:\Users\61011\.gradle\caches\transforms-3\fc0f8bf12d8eee26f6ec39e2b2ab176b\transformed\jetified-om-android-sdk-2.6.5\AndroidManifest.xml:18:13-77
+78        <activity
+78-->[com.openmediation:om-android-sdk:2.6.5] C:\Users\61011\.gradle\caches\transforms-3\fc0f8bf12d8eee26f6ec39e2b2ab176b\transformed\jetified-om-android-sdk-2.6.5\AndroidManifest.xml:19:9-23:75
+79            android:name="com.crosspromotion.sdk.ActionActivity"
+79-->[com.openmediation:om-android-sdk:2.6.5] C:\Users\61011\.gradle\caches\transforms-3\fc0f8bf12d8eee26f6ec39e2b2ab176b\transformed\jetified-om-android-sdk-2.6.5\AndroidManifest.xml:20:13-65
+80            android:configChanges="keyboardHidden|screenSize"
+80-->[com.openmediation:om-android-sdk:2.6.5] C:\Users\61011\.gradle\caches\transforms-3\fc0f8bf12d8eee26f6ec39e2b2ab176b\transformed\jetified-om-android-sdk-2.6.5\AndroidManifest.xml:21:13-62
+81            android:launchMode="singleTask"
+81-->[com.openmediation:om-android-sdk:2.6.5] C:\Users\61011\.gradle\caches\transforms-3\fc0f8bf12d8eee26f6ec39e2b2ab176b\transformed\jetified-om-android-sdk-2.6.5\AndroidManifest.xml:22:13-44
+82            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+82-->[com.openmediation:om-android-sdk:2.6.5] C:\Users\61011\.gradle\caches\transforms-3\fc0f8bf12d8eee26f6ec39e2b2ab176b\transformed\jetified-om-android-sdk-2.6.5\AndroidManifest.xml:23:13-72
+83    </application>
+84
+85</manifest>

@@ -30,6 +30,8 @@ allprojects {
     repositories {
         google()
         mavenCentral()
+        jcenter()
+        maven { url 'https://dl.openmediation.com/omcenter/' }
 //CHUNK_ALLPROJECTS_REPOSITORIES_BEGIN
 //CHUNK_ALLPROJECTS_REPOSITORIES_END
 
@@ -53,6 +55,7 @@ configurations {
 dependencies {
     implementation libraries.kotlinStdLib
     implementation libraries.androidxFragment
+    implementation 'com.openmediation:om-android-sdk:2.6.5@aar'
 
     if (rootProject.findProject(":lib")) {
         implementation project(":lib")
