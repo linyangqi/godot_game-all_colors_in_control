@@ -33,10 +33,15 @@ package com.godot.game;
 import org.godotengine.godot.FullScreenGodotApp;
 
 import android.os.Bundle;
+import android.view.ViewGroup;
 
 import com.openmediation.sdk.InitCallback;
 import com.openmediation.sdk.InitConfiguration;
 import com.openmediation.sdk.OmAds;
+import com.openmediation.sdk.splash.SplashAd;
+import com.openmediation.sdk.utils.error.Error;
+import com.openmediation.sdk.splash.SplashAd;
+import com.openmediation.sdk.splash.SplashAdListener;
 import com.openmediation.sdk.utils.error.Error;
 
 /**
@@ -58,13 +63,63 @@ public class GodotApp extends FullScreenGodotApp {
 			// Invoked when the initialization is successful.
 			@Override
 			public void onSuccess() {
+
+				String placementId = "12888";
+				SplashAd.loadAd(placementId);
+				/*
+				if (SplashAd.isReady(placementId)) {
+					ViewGroup viewGroup;
+					SplashAd.showAd(placementId, viewGroup);
+				}
+
+				 */
 			}
 
 			// Invoked when the initialization is failed.
 			@Override
 			public void onError(Error error) {
 			}
+
 		});
+		SplashAd.setSplashAdListener("12888", new SplashAdListener() {
+				@Override
+				public void onSplashAdLoaded(String placementId) {
+					//在Splashload 成功之后可以展示Splash
+					//假设加载完成后立即展示
+					SplashAd.showAd(placementId);
+				}
+
+				@Override
+				public void onSplashAdFailed(String placementId, Error error) {
+
+				}
+
+				@Override
+				public void onSplashAdClicked(String placementId) {
+
+				}
+
+				@Override
+				public void onSplashAdShowed(String placementId) {
+
+				}
+
+				@Override
+				public void onSplashAdShowFailed(String placementId, Error error) {
+
+				}
+
+				@Override
+				public void onSplashAdTick(String placementId, long millisUntilFinished) {
+
+				}
+
+				@Override
+				public void onSplashAdDismissed(String placementId) {
+
+				}
+			});
+
 	}
 	@Override
 	protected void onResume() {
