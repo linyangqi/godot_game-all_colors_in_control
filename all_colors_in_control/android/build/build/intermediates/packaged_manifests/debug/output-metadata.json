@@ -4,7 +4,7 @@
     "type": "PACKAGED_MANIFESTS",
     "kind": "Directory"
   },
-  "applicationId": "org.godotengine.allcolorsincontrol",
+  "applicationId": "com.godot.game",
   "variantName": "debug",
   "elements": [
     {

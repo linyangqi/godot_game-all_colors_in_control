@@ -1,4 +1,4 @@
-#Fri Oct 28 18:47:55 CST 2022
+#Fri Nov 18 20:21:52 CST 2022
 base.0=H\:\\android_files\\godot_games\\godot_game-all_colors_in_control_ad\\all_colors_in_control\\android\\build\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
