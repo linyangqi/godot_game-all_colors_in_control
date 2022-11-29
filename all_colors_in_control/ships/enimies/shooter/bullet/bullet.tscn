@@ -40,7 +40,7 @@ tracks/0/keys = {
 [node name="bullet" type="Area2D"]
 modulate = Color( 0.0313726, 0.839216, 1, 1 )
 script = ExtResource( 2 )
-speed = 10.0
+speed = 8.0
 rotate_speed = 0.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
